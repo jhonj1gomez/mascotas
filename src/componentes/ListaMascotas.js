@@ -11,7 +11,7 @@ class ListaMascotas extends Component {
          * Dirección URL del servicio, en este caso se ejecuta de manera local, por lo tanto
          * se escribe la ip del equipo donde se está ejecutando el servicio REST.
          */
-        axios.get("http://192.168.20.103:8080/WSRESTMASCOTAS/webresources/udenar.mascotas")
+        axios.get("https://ip/WSRESTMASCOTAS/webresources/udenar.mascotas")
             .then(response => {
                 this.setState({ mascotas: response.data });
             })
